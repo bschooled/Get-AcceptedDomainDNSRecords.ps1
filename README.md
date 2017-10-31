@@ -1,9 +1,9 @@
 # Get-AcceptedDomainDNSRecords.ps1
 
-##Purpose  
+#Purpose  
 The primary purpose of this script is take an export of your accepted domains from Exchange on-premises or Exchange Online, and pull DNS records related to MX, SPF, DKIM, DMARC, and Autodiscover.  
   
-##Example  
+#Example  
 First get and export your Accepted domains to a CSV  
 Get-AcceptedDomain | Export-CSV domains.csv -notypeinformation  
   
@@ -11,5 +11,5 @@ Get-AcceptedDomain | Export-CSV domains.csv -notypeinformation
 .\Get-AcceptedDomainDNSRecords.ps1 -AcceptedDomainCSVPath domains.csv  
   
 #Plans  
-**Add variable input
-**Create HTML report highlighting discrepencies
+*Add variable input
+*Create HTML report highlighting discrepencies
